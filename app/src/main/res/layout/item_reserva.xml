@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_reserva_sala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/sala_nombre" />
+
+        <TextView
+            android:id="@+id/tv_reserva_fecha_hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/fecha_yyyy_mm_dd_hora_hh_mm_hh_mm" />
+
+        <TextView
+            android:id="@+id/tv_reserva_estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/estado_activa"
+            android:textStyle="italic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btn_reserva_editar"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/editar"
+                android:textSize="12sp"
+                android:layout_marginEnd="8dp"
+                style="?attr/materialButtonOutlinedStyle" />
+
+            <Button
+            android:id="@+id/btn_reserva_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/cancelar_reserva"
+            android:textSize="12sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

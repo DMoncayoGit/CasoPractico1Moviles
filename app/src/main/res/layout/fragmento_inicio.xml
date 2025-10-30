@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tv_mensaje_bienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenido_empleado"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:rowCount="5"
+        android:alignmentMode="alignBounds"
+        android:columnOrderPreserved="false">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_nav_reservas"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="@string/reservas"
+            android:layout_margin="0dp"
+            app:icon="@drawable/ic_menu_reservas"
+            app:iconGravity="top"
+            app:iconPadding="5dp"
+            app:iconSize="30dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_nav_perfil"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="@string/perfil"
+            android:layout_margin="0dp"
+            app:icon="@drawable/ic_menu_profile"
+            app:iconGravity="top"
+            app:iconPadding="5dp"
+            app:iconSize="30dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_nav_mapa"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="@string/mapa"
+            android:layout_margin="0dp"
+            app:icon="@drawable/ic_menu_mapa"
+            app:iconGravity="top"
+            app:iconPadding="5dp"
+            app:iconSize="30dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_nav_reglamento"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="@string/manual_de_usuario"
+            android:layout_margin="0dp"
+            app:icon="@drawable/ic_menu_reglamento"
+            app:iconGravity="top"
+            app:iconPadding="5dp"
+            app:iconSize="30dp" />
+
+    </GridLayout>
+
+</LinearLayout>

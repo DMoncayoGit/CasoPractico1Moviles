@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.empresa.reservasalas.ui.inicio.InicioFragmento"
+        android:label="Inicio"
+        tools:layout="@layout/fragmento_inicio" />
+
+    <fragment
+        android:id="@+id/nav_reservas"
+        android:name="com.empresa.reservasalas.ui.reservas.ReservasFragmento"
+        android:label="Reservas"
+        tools:layout="@layout/fragmento_reservas" />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.empresa.reservasalas.ui.perfil.PerfilFragmento"
+        android:label="Perfil"
+        tools:layout="@layout/fragmento_perfil" />
+
+    <fragment
+        android:id="@+id/nav_mapa"
+        android:name="com.empresa.reservasalas.ui.mapa.MapaFragmento"
+        android:label="Mapa"
+        tools:layout="@layout/fragmento_mapa" />
+
+    <fragment
+        android:id="@+id/nav_reglamento"
+        android:name="com.empresa.reservasalas.ui.reglamento.ReglamentoFragmento"
+        android:label="Manual de Usuario"
+        tools:layout="@layout/fragmento_reglamento" />
+
+</navigation>
